@@ -9,6 +9,10 @@ const userSchema = new Schema(
       unique: true,
     },
     age: Number,
+    password: {
+      type: String,
+      require: true,
+    }
   },
   {
     timestamps: true,
